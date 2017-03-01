@@ -23,9 +23,9 @@ Set-ItemProperty "HKCU:\Control Panel\Mouse" "SmoothMouseYCurve" ([byte[]](0x00,
 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xA8, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0xE0, 0x00, 0x00, 0x00, 0x00, 0x00))
 
-Write-Output "Disable mouse pointer hiding"
-Set-ItemProperty "HKCU:\Control Panel\Desktop" "UserPreferencesMask" ([byte[]](0x9e,
-0x1e, 0x06, 0x80, 0x12, 0x00, 0x00, 0x00))
+#Write-Output "Disable mouse pointer hiding"
+#Set-ItemProperty "HKCU:\Control Panel\Desktop" "UserPreferencesMask" ([byte[]](0x9e,
+#0x1e, 0x06, 0x80, 0x12, 0x00, 0x00, 0x00))
 
 Write-Output "Disable Game DVR and Game Bar"
 force-mkdir "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR"
@@ -44,16 +44,16 @@ New-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Explorer -Name 
 #Set-ItemProperty "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\MTCUVC" "EnableMtcUvc" 0
 
 Write-Output "Setting folder view options"
-Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "Hidden" 1
+#Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "Hidden" 1
 Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0
-Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideDrivesWithNoMedia" 0
+#Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideDrivesWithNoMedia" 0
 Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "ShowSyncProviderNotifications" 0
 
 Write-Output "Disable Aero-Shake Minimize feature"
 Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "DisallowShaking" 1
 
-Write-Output "Setting default explorer view to This PC"
-Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo" 1
+#Write-Output "Setting default explorer view to This PC"
+#Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo" 1
 
 #Write-Output "Removing user folders under This PC"
 # Remove Desktop from This PC
