@@ -11,19 +11,19 @@ do {} until (Elevate-Privileges SeTakeOwnershipPrivilege)
 Write-Output "Uninstalling default apps"
 $apps = @(
     # default Windows 10 apps
-    "Microsoft.3DBuilder"
+    #"Microsoft.3DBuilder"
     "Microsoft.Appconnector"
     "Microsoft.Advertising.Xaml" 
     "Microsoft.BingFinance"
     "Microsoft.BingNews"
     "Microsoft.BingSports"
     "Microsoft.BingTranslator"
-    "Microsoft.BingWeather"
+    #"Microsoft.BingWeather"
     #"Microsoft.FreshPaint"
-    "Microsoft.Microsoft3DViewer"
+    #"Microsoft.Microsoft3DViewer"
     "Microsoft.MicrosoftOfficeHub"
-    "Microsoft.MicrosoftSolitaireCollection"
-    "Microsoft.MicrosoftPowerBIForWindows"
+    #"Microsoft.MicrosoftSolitaireCollection"
+    #"Microsoft.MicrosoftPowerBIForWindows"
     "Microsoft.MinecraftUWP"
     #"Microsoft.MicrosoftStickyNotes"
     #"Microsoft.NetworkSpeedTest"
@@ -38,7 +38,7 @@ $apps = @(
     #"Microsoft.WindowsCalculator"
     "Microsoft.WindowsCamera"
     "microsoft.windowscommunicationsapps"
-    "Microsoft.WindowsMaps"
+    #"Microsoft.WindowsMaps"
     "Microsoft.WindowsPhone"
     "Microsoft.WindowsSoundRecorder"
     #"Microsoft.WindowsStore"
@@ -56,12 +56,12 @@ $apps = @(
     "Microsoft.GetHelp"
     "Microsoft.Getstarted"
     "Microsoft.Messaging"
-    "Microsoft.Office.Sway"
+    #"Microsoft.Office.Sway"
     "Microsoft.OneConnect"
     "Microsoft.WindowsFeedbackHub"
 
     # Creators Update apps
-    "Microsoft.Microsoft3DViewer"
+    #"Microsoft.Microsoft3DViewer"
     #"Microsoft.MSPaint"
 
     #Redstone apps
@@ -77,7 +77,7 @@ $apps = @(
     "Microsoft.YourPhone"
 
     # non-Microsoft
-    "9E2F88E3.Twitter"
+    #"9E2F88E3.Twitter"
     "PandoraMediaInc.29680B314EFC2"
     "Flipboard.Flipboard"
     "ShazamEntertainmentLtd.Shazam"
@@ -86,7 +86,7 @@ $apps = @(
     "king.com.BubbleWitch3Saga"
     "king.com.*"
     "ClearChannelRadioDigital.iHeartRadio"
-    "4DF9E0F8.Netflix"
+    #"4DF9E0F8.Netflix"
     "6Wunderkinder.Wunderlist"
     "Drawboard.DrawboardPDF"
     "2FE3CB00.PicsArt-PhotoStudio"
