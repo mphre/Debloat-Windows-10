@@ -11,6 +11,7 @@ $packages = @(
     "firefox"
     "google-backup-and-sync"
     "kwrite"
+    "naps2"
     #"notepadplusplus.install"
     "okular"
     "peazip"
