@@ -187,12 +187,12 @@ $domains = @(
     "m.hotmail.com"
 
     # can cause issues with Skype (#79) or other services (#171)
-    "apps.skype.com"
-    "c.msn.com"
+    #"apps.skype.com"
+    #"c.msn.com"
     # "login.live.com" Can't login to outlook and other live apps
-    "pricelist.skype.com"
-    "s.gateway.messenger.live.com"
-    "ui.skype.com"
+    #"pricelist.skype.com"
+    #"s.gateway.messenger.live.com"
+    #"ui.skype.com"
 )
 Write-Output "" | Out-File -Encoding ASCII -Append $hosts_file
 foreach ($domain in $domains) {
